@@ -1,0 +1,59 @@
+#authModal {
+    top: 75px;
+}
+#authModal .modal-content {
+    border-radius: 10px;
+    margin-top: 100px;
+}
+#authModal h5.modal-title,
+#authModal span span {
+    color: #f03;
+    text-align: center;
+}
+#authModal span,
+#authModal label {
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 12px;
+    margin: 0px;
+}
+#authModal .btn-close {
+    color: #f03;
+    opacity: 1;
+    cursor: pointer;
+    background: none;
+}
+#authModal input{
+    border-radius: 5px;
+    border: 1px solid #f033;
+    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+}
+#authModal input::placeholder{
+    font-size: 14px;
+    opacity: 0.6;
+}
+#authModal .authBtn {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    padding: 8px;
+    background-color: #f03;
+    margin-top: 30px;
+}
+#authModal .authBtn:hover {
+    background-color: #d2032d;
+}
+#authModal .form-control{
+    border: none;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.error-message{
+    font-size: 16px;
+    color: red;
+}

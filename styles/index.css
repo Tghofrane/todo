@@ -1,0 +1,23 @@
+#home {
+    background-image: url("../public/banner.webp");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 170px 0px;
+}
+
+#home h1 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    padding-top: 50px;
+}
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 18px;
+        padding-top: 25px;
+    }
+}
