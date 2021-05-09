@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import AuthModal from './AuthModal';
 
-function Header (props) {
+function Header () {
    
    const logout = e => {
         e.preventDefault();
@@ -23,10 +23,11 @@ function Header (props) {
                             <div>
                                 {
                                     (window.sessionStorage.getItem("logged") == "true") ?
-                                        (<ul className="d-flex align-items-end navbar-nav">
-                                            <li className="nav-item pointer" onClick={()=>{Router.push("/mytasks");}}>Tâches</li>
-                                            <li className="nav-item pointer" onClick={(e)=>{logout(e)}}> Déconnexion</li>
-                                        </ul>
+                                        (
+                                            <ul className="d-flex align-items-end navbar-nav">
+                                                <li className="nav-item pointer" onClick={()=>{Router.push("/mytasks");}}>Tâches</li>
+                                                <li className="nav-item pointer" onClick={(e)=>{logout(e)}}> Déconnexion</li>
+                                            </ul>
                                         ) : (
                                             <ul className="d-flex align-items-end navbar-nav">
                                                 <li className="nav-item">

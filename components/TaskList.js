@@ -5,7 +5,7 @@ import Task from './Task';
 function TaskList() {
     const [tasks, setTasks] = useState([]);
     const addTask = task => {
-        if ((!task.name || /^\s*$/.test(task.name)) || (!task.description || /^\s*$/.test(task.description))) return // to not accept empty string
+        if ((!task.name || /^\s*$/.test(task.name)) || (!task.description || /^\s*$/.test(task.description))) return //  not accept empty string
         const newTasks = [task, ...tasks];
         setTasks(newTasks);
     }
