@@ -7,7 +7,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import SignInForm from '../SignInForm';
 
 function AuthModal (props){
-
         return (
             <Fragment>
                 <span className="pointer" data-bs-toggle="modal" data-bs-target="#authModal">
